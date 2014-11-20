@@ -1,0 +1,46 @@
+//This doesn't work
+public class Point
+{
+  int x;
+  int y;
+ 
+  Point p=new Point();
+  public  int getX()
+  {
+    return x;
+  }
+  public int getY()
+  {
+    return y;
+  }
+  public double distanceFromOrigin()
+  {
+    double dis=Math.sqrt((x*x)+(y*y));
+    return dis;
+  }
+  public double distance(Point m)
+  {
+    double dis=Math.sqrt(Math.pow(x-m.x,2)+Math.pow(y-m.y,2));
+    return dis;
+  }
+  public String toString()
+  {
+    String s="("+x+","+y+")";
+    return s;
+  }
+  public void setX(int k)
+  {
+    p.x=k;
+  }
+  public void setY(int m)
+  {
+    p.y=m;
+  }
+  public void translate(int dx, int dy)
+  {
+    p.x=+dx;
+    p.y=+dy;
+  }
+}
+  
+  
